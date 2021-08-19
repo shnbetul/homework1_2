@@ -34,3 +34,37 @@ $guess = "1470"; // Tahmin edilen değer
  * 
  * yazması gerekiyor.
  */
+<?php
+$gender="male";
+$weight=55;
+$height=170;
+$age=25;
+
+$guess="1470";
+
+if($gender="male"){
+
+    $result1=88.362 +(13.397 * $weight)+(4.799* $height)-(5.677* $age);
+    if($result1<$guess){
+        echo "tahmin değerinden küçük";
+    }
+    else if($result1>$guess){
+        echo "tahmin değerinden büyük";
+    }
+    else{
+        echo "sonuç ve tahmin değeri birbirine eşittir.";
+    }
+}
+else{
+    $result2= 447.593 +(9.247* $weight)+(3.098* $height)-(4.330* $age);
+     if($result2<$guess){
+        echo "tahmin değerinden küçük";
+    }
+    else if($result2>$guess){
+        echo "tahmin değerinden büyük";
+    }
+    else{
+        echo "sonuç ve tahmin değeri birbirine eşittir.";
+    }
+
+}
